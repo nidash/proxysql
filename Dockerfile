@@ -8,8 +8,8 @@ FROM phusion/baseimage:0.10.1
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-# ...put your own build instructions here...
-RUN apt-get update && apt-get install -y wget
+# add wget and mysq-client for admin interface.
+RUN apt-get update && apt-get install -y wget mysql-client
 
 RUN wget https://github.com/sysown/proxysql/releases/download/v1.4.8/proxysql_1.4.8-ubuntu16_amd64.deb -O /opt/proxysql_1.4.8-ubuntu16_amd64.deb
 RUN dpkg -i /opt/proxysql_1.4.8-ubuntu16_amd64.deb
