@@ -1,5 +1,5 @@
 # proxysql
-Docker image with ProxySQL 1.4.8 based on Phusion base image for ubuntu with myhsql client included to connect to proxysql admin interface using port 6032
+Docker image with ProxySQL 1.4.8 based on Phusion base image for ubuntu with mysql client included to connect to proxySQL admin interface using port 6032
 
 Usage:
 
